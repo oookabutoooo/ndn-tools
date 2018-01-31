@@ -129,10 +129,6 @@ main(int argc, char* argv[])
     return 2;
   }
 
-  if(vm.count("function") > 0) {
-    options.function = vm["function"].as<std::string>();
-  }
-
   if (vm.count("minsuffix") > 0 && options.minSuffixComponents < 0) {
     std::cerr << "ERROR: MinSuffixComponents must be a non-negative integer" << std::endl;
     usage(std::cerr, visibleOptDesc);
