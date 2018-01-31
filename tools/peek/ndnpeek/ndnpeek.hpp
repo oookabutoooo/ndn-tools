@@ -41,6 +41,7 @@ namespace peek {
 struct PeekOptions
 {
   std::string prefix;
+  std::string function;
   int minSuffixComponents;
   int maxSuffixComponents;
   time::milliseconds interestLifetime;

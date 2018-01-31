@@ -186,6 +186,7 @@ public:
              const Interest& interest,
              shared_ptr<Data> dataPacket)
   {
+    std::cout << "Function: " << interest.getFunction() << std::endl;
     m_face.put(*dataPacket);
     m_isDataSent = true;
     m_face.shutdown();

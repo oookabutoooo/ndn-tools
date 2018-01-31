@@ -70,6 +70,8 @@ NdnPeek::createInterest() const
 {
   Interest interest(m_options.prefix);
 
+  interest.setFunction(m_options.function);
+
   if (m_options.minSuffixComponents >= 0)
     interest.setMinSuffixComponents(m_options.minSuffixComponents);
 
